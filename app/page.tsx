@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Image from "next/image";
 import { ArrowRight, Check, Mail, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -148,22 +149,63 @@ export default function Home() {
             </article>
           </div>
 
-          <div className="work-steps">
-            <div>
-              <span>01</span>
-              <h3>Analyse</h3>
-              <p>Ziele, Konto und Daten prüfen.</p>
-            </div>
-            <div>
-              <span>02</span>
-              <h3>Fokus</h3>
-              <p>Budget auf relevante Kampagnen lenken.</p>
-            </div>
-            <div>
-              <span>03</span>
-              <h3>Optimierung</h3>
-              <p>Testen, auswerten und verbessern.</p>
-            </div>
+          <div className="illustrated-steps">
+            <article className="illustrated-step reveal">
+              <div className="step-art art-blue">
+                <Image
+                  src="/illustrations/analyse.png"
+                  alt="Illustration einer Analyse mit Lupe und Datenübersicht"
+                  width={640}
+                  height={480}
+                />
+              </div>
+              <div className="step-copy">
+                <span>01 / Analyse</span>
+                <h3>Wir prüfen Konto und Tracking.</h3>
+                <p>
+                  Wir sehen uns Kampagnen, Suchbegriffe, Messung und Ziele an.
+                  Danach ist klar, wo das Konto steht.
+                </p>
+              </div>
+            </article>
+
+            <article className="illustrated-step reveal">
+              <div className="step-art art-yellow">
+                <Image
+                  src="/illustrations/fokus.png"
+                  alt="Illustration eines Filters, der Kampagnen klar priorisiert"
+                  width={640}
+                  height={480}
+                />
+              </div>
+              <div className="step-copy">
+                <span>02 / Fokus</span>
+                <h3>Wir setzen klare Prioritäten.</h3>
+                <p>
+                  Budget fließt in relevante Kampagnen. Unnötige Komplexität
+                  und schwache Suchanfragen werden reduziert.
+                </p>
+              </div>
+            </article>
+
+            <article className="illustrated-step reveal">
+              <div className="step-art art-green">
+                <Image
+                  src="/illustrations/optimierung.png"
+                  alt="Illustration einer laufenden Optimierung mit Reglern und Diagramm"
+                  width={640}
+                  height={480}
+                />
+              </div>
+              <div className="step-copy">
+                <span>03 / Optimierung</span>
+                <h3>Wir verbessern Schritt für Schritt.</h3>
+                <p>
+                  Wir testen, werten aus und passen an. Jede wichtige Änderung
+                  wird kurz dokumentiert und erklärt.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
