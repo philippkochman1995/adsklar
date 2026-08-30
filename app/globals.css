@@ -462,58 +462,25 @@ a {
   overflow: hidden;
 }
 
-.step-art::before,
-.step-art::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  animation: orbit-dot 5s ease-in-out infinite;
-}
-
-.step-art::before {
-  top: 18%;
-  left: 12%;
-  width: 10px;
-  height: 10px;
-  background: var(--red);
-}
-
-.step-art::after {
-  right: 13%;
-  bottom: 17%;
-  width: 14px;
-  height: 14px;
-  background: var(--yellow);
-  animation-delay: -2.2s;
-}
-
 .art-blue {
-  background: #eef4ff;
+  background: #f6f8fc;
 }
 
 .art-yellow {
-  background: #fff8e1;
+  background: #fbfaf6;
 }
 
 .art-green {
-  background: #edf7ef;
+  background: #f5f8f5;
 }
 
 .step-art img {
   position: relative;
   z-index: 1;
-  width: 88%;
+  width: 76%;
   height: auto;
   object-fit: contain;
-  animation: illustration-float 5.5s ease-in-out infinite;
-}
-
-.illustrated-step:nth-child(2) .step-art img {
-  animation-delay: -1.8s;
-}
-
-.illustrated-step:nth-child(3) .step-art img {
-  animation-delay: -3.1s;
+  animation: illustration-settle 0.7s ease both;
 }
 
 .step-copy {
@@ -835,14 +802,16 @@ a {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes illustration-float {
-  0%, 100% { transform: translateY(0) rotate(0.001deg); }
-  50% { transform: translateY(-9px) rotate(0.7deg); }
+@keyframes illustration-settle {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes orbit-dot {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(8px, -7px) scale(1.15); }
+@supports (animation-timeline: view()) {
+  .step-art img {
+    animation-timeline: view();
+    animation-range: entry 8% cover 24%;
+  }
 }
 
 @media (max-width: 960px) {
