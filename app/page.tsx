@@ -49,13 +49,14 @@ export default function Home() {
 
       <section className="hero page-grid" id="top">
         <div className="hero-copy">
-          <p className="kicker hero-in delay-1">Google Ads Agentur</p>
+          <p className="kicker hero-in delay-1">Google Ads für Unternehmen</p>
           <h1 className="hero-in delay-2">
-            Google Ads, die verständlich bleiben.
+            Endlich bei Google gefunden werden.
           </h1>
           <p className="hero-text hero-in delay-3">
-            Wir betreuen Google Ads für Unternehmen. Mit klarem Fokus, sauberem
-            Tracking und regelmäßiger Optimierung.
+            Wir sorgen dafür, dass Ihre Anzeigen bei den richtigen
+            Suchanfragen sichtbar werden. Mit klaren Kampagnen, sauberem
+            Tracking und laufender Optimierung.
           </p>
           <div className="hero-actions hero-in delay-4">
             <Button asChild size="lg" className="blue-button">

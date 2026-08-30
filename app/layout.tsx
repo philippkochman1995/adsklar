@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Klar Ads — Google Ads, nachvollziehbar betreut",
+  title: "Endlich bei Google gefunden werden | Klar Ads",
   description:
-    "Klar Ads plant, betreut und verbessert Google Ads für Unternehmen — transparent, fokussiert und ohne große Versprechen.",
+    "Google Ads für Unternehmen: klare Kampagnen, sauberes Tracking und laufende Optimierung. Transparent betreut durch Klar Ads.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
