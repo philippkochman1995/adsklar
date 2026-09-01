@@ -54,9 +54,9 @@ export default function Home() {
             Endlich auf Platz eins bei Google.
           </h1>
           <p className="hero-text hero-in delay-3">
-            Wir bringen Ihre Anzeigen bei den richtigen Suchanfragen nach
-            oben. Mit klaren Kampagnen, sauberem Tracking und laufender
-            Optimierung.
+            Wir sorgen dafür, dass Ihre Anzeigen bei den richtigen
+            Suchanfragen sichtbar werden. Mit klaren Kampagnen, sauberem
+            Tracking und laufender Optimierung.
           </p>
           <div className="hero-actions hero-in delay-4">
             <Button asChild size="lg" className="blue-button">
@@ -81,69 +81,47 @@ export default function Home() {
           </div>
         </div>
 
-        <div
-          className="hero-showcase hero-in-right delay-3"
-          aria-label="Beispiel einer Website mit Performance-Daten"
-        >
-          <div className="website-window">
-            <div className="window-bar">
-              <div className="window-controls" aria-hidden="true">
-                <i />
-                <i />
-                <i />
-              </div>
-              <span>studio-nord.de</span>
-              <i className="window-status" aria-hidden="true" />
+        <div className="hero-panel hero-in-right delay-3">
+          <div className="color-dots" aria-hidden="true">
+            <i />
+            <i />
+            <i />
+            <i />
+          </div>
+          <div className="panel-head">
+            <div>
+              <span className="live-dot" /> Konto aktiv
             </div>
-
-            <div className="website-preview">
-              <div className="preview-nav">
-                <strong>NORD / 01</strong>
-                <div>
-                  <span>Projekte</span>
-                  <span>Studio</span>
-                  <span>Kontakt</span>
-                </div>
-              </div>
-
-              <div className="preview-stage">
-                <div className="preview-copy">
-                  <span>Architektur · Berlin</span>
-                  <h3>Räume mit Haltung.</h3>
-                  <p>Klare Architektur für Menschen und Orte.</p>
-                  <div className="preview-link">
-                    Projekte ansehen <ArrowRight aria-hidden="true" />
-                  </div>
-                </div>
-                <div className="preview-visual" aria-hidden="true">
-                  <i className="visual-wall" />
-                  <i className="visual-door" />
-                  <i className="visual-shadow" />
-                </div>
-              </div>
-
-              <div className="preview-footer">
-                <span>Ausgewählte Projekte</span>
-                <span>Berlin · 2026</span>
-              </div>
+            <span>Letzte 30 Tage</span>
+          </div>
+          <div className="panel-title">
+            <span>Kosten pro Anfrage</span>
+            <strong>67,10 €</strong>
+            <small>13,4 % niedriger als im Vormonat</small>
+          </div>
+          <div className="simple-chart" aria-hidden="true">
+            <svg viewBox="0 0 520 150">
+              <path
+                pathLength="1"
+                d="M0 130 C48 122 72 130 112 107 S179 100 220 80 S281 74 326 54 S399 64 440 35 S487 27 520 15"
+              />
+            </svg>
+          </div>
+          <div className="panel-metrics">
+            <div>
+              <span>Anfragen</span>
+              <strong>186</strong>
+            </div>
+            <div>
+              <span>Budget</span>
+              <strong>12.480 €</strong>
+            </div>
+            <div>
+              <span>Tracking</span>
+              <strong className="green-text">Aktiv</strong>
             </div>
           </div>
-
-          <div className="stat-card stat-primary">
-            <span>Website-Anfragen</span>
-            <strong>+38 %</strong>
-            <small>seit Kampagnenstart</small>
-          </div>
-
-          <div className="stat-card stat-secondary">
-            <span>Sichtbarkeit</span>
-            <div className="stat-value">
-              <strong>92 %</strong>
-              <i aria-hidden="true" />
-            </div>
-          </div>
-
-          <p className="example-note">Beispielhafte Darstellung</p>
+          <p className="example-note">Beispielhafte Kontodaten</p>
         </div>
       </section>
 
