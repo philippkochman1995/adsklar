@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import Image from "next/image";
-import { ArrowRight, Check, Mail, Phone } from "lucide-react";
+import { ArrowRight, Check, Mail, Phone, Search } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -81,47 +81,55 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-panel hero-in-right delay-3">
-          <div className="color-dots" aria-hidden="true">
-            <i />
-            <i />
-            <i />
-            <i />
-          </div>
-          <div className="panel-head">
+        <div className="search-mockup hero-in-right delay-3">
+          <div className="search-window-bar" aria-hidden="true">
             <div>
-              <span className="live-dot" /> Konto aktiv
+              <i />
+              <i />
+              <i />
             </div>
-            <span>Letzte 30 Tage</span>
+            <span>google.de</span>
           </div>
-          <div className="panel-title">
-            <span>Kosten pro Anfrage</span>
-            <strong>67,10 €</strong>
-            <small>13,4 % niedriger als im Vormonat</small>
-          </div>
-          <div className="simple-chart" aria-hidden="true">
-            <svg viewBox="0 0 520 150">
-              <path
-                pathLength="1"
-                d="M0 130 C48 122 72 130 112 107 S179 100 220 80 S281 74 326 54 S399 64 440 35 S487 27 520 15"
-              />
-            </svg>
-          </div>
-          <div className="panel-metrics">
-            <div>
-              <span>Anfragen</span>
-              <strong>186</strong>
+
+          <div className="search-page">
+            <div className="search-wordmark" aria-label="Google">
+              <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
             </div>
-            <div>
-              <span>Budget</span>
-              <strong>12.480 €</strong>
+
+            <div className="search-field">
+              <span className="search-query">google ads agentur berlin</span>
+              <Search aria-hidden="true" />
             </div>
-            <div>
-              <span>Tracking</span>
-              <strong className="green-text">Aktiv</strong>
+
+            <div className="search-tabs" aria-hidden="true">
+              <span>Alle</span>
+              <span>Bilder</span>
+              <span>Maps</span>
+              <span>Mehr</span>
             </div>
+
+            <p className="search-count">Ergebnisse für Ihre Suche</p>
+
+            <article className="search-result featured-result">
+              <div className="position-label">
+                <span>1</span> Erste Position
+              </div>
+              <p><strong>Gesponsert</strong> · klarads.de</p>
+              <h3>Klar Ads | Google Ads, klar betreut</h3>
+              <div>
+                Strukturierte Kampagnen, sauberes Tracking und direkte
+                Betreuung für Ihr Unternehmen.
+              </div>
+            </article>
+
+            <article className="search-result muted-result" aria-hidden="true">
+              <p>beispiel-agentur.de</p>
+              <h3>Digitale Lösungen für Unternehmen</h3>
+              <div className="result-lines"><i /><i /></div>
+            </article>
           </div>
-          <p className="example-note">Beispielhafte Kontodaten</p>
+
+          <p className="example-note">Beispielhafte Suchdarstellung</p>
         </div>
       </section>
 
