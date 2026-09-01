@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Endlich bei Google gefunden werden | Klar Ads",
+  title: "Endlich auf Platz eins bei Google | Klar Ads",
   description:
     "Google Ads für Unternehmen: klare Kampagnen, sauberes Tracking und laufende Optimierung. Transparent betreut durch Klar Ads.",
   icons: {
