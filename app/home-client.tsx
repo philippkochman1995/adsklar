@@ -15,8 +15,6 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
-const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 const testimonials = [
   [
     "Nordwerk",
@@ -55,7 +53,6 @@ export default function Home() {
         </a>
         <nav aria-label="Seitennavigation">
           <a href="#arbeitsweise">Arbeitsweise</a>
-          <a href="#ueber-uns">Über uns</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
         <Button asChild className="blue-button header-button">
@@ -245,95 +242,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="illustrated-steps">
-            <article className="illustrated-step reveal">
-              <div className="step-art art-blue">
-                <img
-                  src={`${assetPrefix}/illustrations/analyse.png`}
-                  alt="Illustration einer Analyse mit Lupe und Datenübersicht"
-                  width={640}
-                  height={480}
-                />
-              </div>
-              <div className="step-copy">
-                <span>01 / Analyse</span>
-                <h3>Wir prüfen Konto und Tracking.</h3>
-                <p>
-                  Wir sehen uns Kampagnen, Suchbegriffe, Messung und Ziele an.
-                  Danach ist klar, wo das Konto steht.
-                </p>
-              </div>
-            </article>
-
-            <article className="illustrated-step reveal">
-              <div className="step-art art-yellow">
-                <img
-                  src={`${assetPrefix}/illustrations/fokus.png`}
-                  alt="Illustration eines Filters, der Kampagnen klar priorisiert"
-                  width={640}
-                  height={480}
-                />
-              </div>
-              <div className="step-copy">
-                <span>02 / Fokus</span>
-                <h3>Wir setzen klare Prioritäten.</h3>
-                <p>
-                  Budget fließt in relevante Kampagnen. Unnötige Komplexität
-                  und schwache Suchanfragen werden reduziert.
-                </p>
-              </div>
-            </article>
-
-            <article className="illustrated-step reveal">
-              <div className="step-art art-green">
-                <img
-                  src={`${assetPrefix}/illustrations/optimierung.png`}
-                  alt="Illustration einer laufenden Optimierung mit Reglern und Diagramm"
-                  width={640}
-                  height={480}
-                />
-              </div>
-              <div className="step-copy">
-                <span>03 / Optimierung</span>
-                <h3>Wir verbessern Schritt für Schritt.</h3>
-                <p>
-                  Wir testen, werten aus und passen an. Jede wichtige Änderung
-                  wird kurz dokumentiert und erklärt.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section className="content-section page-grid soft-section" id="ueber-uns">
-        <div className="section-label reveal">
-          <p className="kicker">Über uns</p>
-          <h2>Klein genug für direkten Kontakt.</h2>
-        </div>
-        <div className="section-content about-content reveal">
-          <p className="large-copy">
-            ads klar ist eine spezialisierte Google Ads Agentur. Wir arbeiten
-            mit wenigen Unternehmen eng zusammen.
-          </p>
-          <p>
-            Sie haben eine feste Ansprechperson. Entscheidungen werden
-            dokumentiert. Wenn eine Maßnahme nicht sinnvoll ist, sagen wir das.
-          </p>
-          <div className="facts">
-            <div>
-              <strong>1</strong>
-              <span>feste Ansprechperson</span>
-            </div>
-            <div>
-              <strong>14 Tage</strong>
-              <span>Optimierungsrhythmus</span>
-            </div>
-            <div>
-              <strong>100 %</strong>
-              <span>Einblick ins Konto</span>
-            </div>
-          </div>
         </div>
       </section>
 
