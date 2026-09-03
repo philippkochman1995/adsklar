@@ -163,24 +163,23 @@ export default function Home() {
             <p>
               <strong>Liegt es an der Website? Am Angebot? Am Traffic?</strong>
             </p>
-            <p>Oder sehen einfach die falschen Menschen das Richtige?</p>
+            <p>Oder kommen einfach die falschen Leute auf die Seite?</p>
             <p>
-              Genau an diesem Punkt wird Google Ads interessant. Nicht als
-              weiterer Marketing-Versuch, sondern als kontrollierter Test:
-              Welche Suchanfragen bringen Menschen auf Ihre Seite, die gerade
-              wirklich suchen?
+              Genau da kann Google Ads helfen. Nicht, weil Anzeigen alles
+              lösen. Sondern weil man damit schneller sieht, wonach Menschen
+              wirklich suchen und ob sie danach Kontakt aufnehmen.
             </p>
-            <p>Und was passiert danach?</p>
+            <p>Dann muss man nicht mehr raten.</p>
             <p>
-              Wir starten deshalb nicht mit mehr Content oder mehr Posts. Wir
-              starten mit Klarheit: Kampagnen, Tracking, Suchbegriffe,
-              Ergebnisse.
+              Man sieht, welche Suchbegriffe passen. Welche Anzeigen geklickt
+              werden. Und ob aus diesen Klicks echte Anfragen werden.
             </p>
             <p>
-              Erst dann weiß man, was wirklich funktioniert.
+              Darum starten wir mit dem Konto und mit dem Tracking, bevor wir
+              einfach mehr Budget ausgeben.
             </p>
             <p>
-              <strong>Und was nur beschäftigt hält.</strong>
+              <strong>Erst messen. Dann verbessern.</strong>
             </p>
           </div>
 
