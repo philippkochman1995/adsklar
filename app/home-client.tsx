@@ -158,6 +158,11 @@ export default function Home() {
             <p>Facebook-Gruppen.</p>
             <p>Man ist beschäftigt. Aber es wird nicht wirklich besser.</p>
             <p>
+              <strong>
+                Ich verstehe das, ich war selbst an diesem Punkt.
+              </strong>
+            </p>
+            <p>
               Das Problem ist dann meistens nicht die Website selbst.
             </p>
             <p>
@@ -172,8 +177,12 @@ export default function Home() {
               Und meistens klicken wir auf eines der ersten Ergebnisse.
             </p>
             <p>
-              Genau dort sollten Sie sichtbar sein, wenn jemand gerade
-              motiviert ist zu kaufen.
+              <strong>
+                Menschen kaufen, wenn sie motiviert sind zu kaufen.
+              </strong>
+            </p>
+            <p>
+              Genau dann sollten Sie sichtbar sein.
             </p>
             <p>
               Google Ads ist dafür ein kontrollierter Test. Man sieht schnell,
