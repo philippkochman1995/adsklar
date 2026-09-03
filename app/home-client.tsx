@@ -232,16 +232,17 @@ export default function Home() {
               Nur so kommt man raus aus dem Raten.
             </p>
             <p>
+              <strong>Und rein in Klarheit. Und zu Kunden.</strong>
+            </p>
+            <div className="story-cta">
               <strong>
                 Jetzt Google Ads Test starten und endlich zur Marketing-Klarheit
-                kommen.
+                kommen
               </strong>
-            </p>
-            <p>
               <a className="story-link" href="#kontakt">
                 Kontakt <ArrowRight aria-hidden="true" />
               </a>
-            </p>
+            </div>
           </div>
 
           <div className="illustrated-steps">

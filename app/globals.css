@@ -620,6 +620,24 @@ a {
   font-weight: 600;
 }
 
+.story-cta {
+  margin-top: 34px;
+  padding: 24px 26px;
+  display: grid;
+  gap: 16px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--blue);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.story-cta strong {
+  max-width: 520px;
+  font-size: clamp(1.2rem, 1.7vw, 1.55rem);
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+}
+
 .story-link {
   display: inline-flex;
   align-items: center;
