@@ -232,7 +232,15 @@ export default function Home() {
               Nur so kommt man raus aus dem Raten.
             </p>
             <p>
-              <strong>Und rein in Klarheit. Und zu Kunden.</strong>
+              <strong>
+                Jetzt Google Ads Test starten und endlich zur Marketing-Klarheit
+                kommen.
+              </strong>
+            </p>
+            <p>
+              <a className="story-link" href="#kontakt">
+                Kontakt <ArrowRight aria-hidden="true" />
+              </a>
             </p>
           </div>
 
@@ -338,18 +346,18 @@ export default function Home() {
           </p>
 
           <div className="contact-person">
-            <div className="person-avatar">LF</div>
+            <div className="person-avatar">AK</div>
             <div>
-              <strong>Lea Fischer</strong>
+              <strong>Alexander Kochman</strong>
               <span>Beratung & Strategie</span>
             </div>
           </div>
           <div className="contact-links">
             <a href="tel:+493055520184">
-              <Phone aria-hidden="true" /> +49 30 555 20 184
+              <Phone aria-hidden="true" /> Tel: +49 30 555 20 184
             </a>
-            <a href="mailto:lea@adsklar.de">
-              <Mail aria-hidden="true" /> lea@adsklar.de
+            <a href="mailto:alexander@adsklar.de">
+              <Mail aria-hidden="true" /> Mail: alexander@adsklar.de
             </a>
           </div>
         </div>
@@ -361,7 +369,7 @@ export default function Home() {
                 <Check aria-hidden="true" />
               </span>
               <h3>Danke für Ihre Anfrage.</h3>
-              <p>Lea meldet sich und bestätigt den Termin.</p>
+              <p>Alexander meldet sich und bestätigt den Termin.</p>
               <Button variant="outline" onClick={() => setSent(false)}>
                 Neue Anfrage
               </Button>

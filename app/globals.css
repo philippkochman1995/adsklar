@@ -620,6 +620,25 @@ a {
   font-weight: 600;
 }
 
+.story-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue);
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.story-link:hover {
+  text-decoration: underline;
+}
+
+.story-link svg {
+  width: 17px;
+  height: 17px;
+}
+
 .illustrated-steps {
   margin-top: 72px;
   display: grid;
