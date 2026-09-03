@@ -340,7 +340,10 @@ export default function Home() {
       <section className="content-section page-grid contact-section" id="kontakt">
         <div className="section-label reveal">
           <p className="kicker">Nächste Schritte</p>
-          <h2>30 Minuten. Klare Einschätzung.</h2>
+          <h2>
+            Ihren kontrollierten Google Ads Test starten und endlich
+            Marketing-Klarheit bekommen
+          </h2>
           <p className="section-note">
             Wir sprechen über Ihre Ausgangslage und sagen offen, ob wir helfen
             können.
