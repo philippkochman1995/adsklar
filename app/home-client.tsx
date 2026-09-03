@@ -17,6 +17,21 @@ import { Textarea } from "@/components/ui/textarea";
 
 const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
+const testimonials = [
+  [
+    "Nordwerk",
+    "Seit Google Ads sauber läuft, sehen wir endlich, welche Anfragen wirklich passen.",
+  ],
+  ["Studio Vela", "Nicht lauter geworden. Einfach messbarer."],
+  [
+    "Berg & Kraft",
+    "Wir wissen jetzt, welche Suchbegriffe Kunden bringen und welche nicht.",
+  ],
+  ["Lumen Bau", "Vorher viel probiert. Jetzt sehen wir, was funktioniert."],
+  ["Feldmann", "Endlich Anfragen, die zu unserem Angebot passen."],
+  ["Maison Lenz", "Klarer Blick auf Budget, Klicks und echte Kontakte."],
+] as const;
+
 const Logo = () => (
   <span className="logo" aria-label="ads klar">
     ads <span>klar</span>
@@ -132,6 +147,30 @@ export default function Home() {
           </div>
 
           <p className="example-note">Beispielhafte Suchdarstellung</p>
+        </div>
+      </section>
+
+      <section className="testimonial-strip" aria-label="Kundenstimmen">
+        <p>Unternehmen, die mit klareren Suchkampagnen arbeiten</p>
+        <div className="testimonial-marquee">
+          <div className="testimonial-track">
+            {testimonials.map(([name, quote]) => (
+              <article className="testimonial-card" key={name}>
+                <div className="fake-logo">{name}</div>
+                <blockquote>{quote}</blockquote>
+              </article>
+            ))}
+            {testimonials.map(([name, quote]) => (
+              <article
+                className="testimonial-card"
+                key={`${name}-duplicate`}
+                aria-hidden="true"
+              >
+                <div className="fake-logo">{name}</div>
+                <blockquote>{quote}</blockquote>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
