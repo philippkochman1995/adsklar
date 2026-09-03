@@ -138,24 +138,26 @@ export default function Home() {
       <section className="content-section page-grid" id="arbeitsweise">
         <div className="section-label reveal">
           <p className="kicker">Wie es funktioniert</p>
-          <h2>Erst verstehen. Dann besser werden.</h2>
+          <h2>Warum Kunden Ihr Unternehmen nicht finden.</h2>
         </div>
         <div className="section-content reveal">
           <div className="story-copy">
-            <p>Viele Unternehmen haben schon eine Website.</p>
-            <p>Oft sogar eine gute.</p>
+            <p>Sie haben eine Website gebaut.</p>
+            <p>Vielleicht sogar viel Zeit reingesteckt.</p>
             <p>
-              Sie ist sauber gestaltet. Die Leistungen stehen drin. Das
-              Kontaktformular funktioniert.
+              Die Texte wurden überarbeitet. Die Leistungen sind erklärt. Das
+              Kontaktformular ist da.
             </p>
-            <p>Und trotzdem passiert zu wenig.</p>
-            <p>Kaum Anfragen.</p>
-            <p>Keine planbaren Kunden.</p>
-            <p>Also probiert man SEO.</p>
-            <p>Ein paar Blogposts. Halb fertig. Halb aus Überzeugung.</p>
-            <p>Dann ein bisschen Instagram.</p>
-            <p>Vielleicht Facebook-Gruppen.</p>
-            <p>Man postet, wartet, schaut in die Zahlen.</p>
+            <p>Dann geht die Seite online.</p>
+            <p>Und erst mal passiert fast nichts.</p>
+            <p>Ein paar Besucher vielleicht.</p>
+            <p>Aber keine regelmäßigen Anfragen.</p>
+            <p>Also macht man das, was alle empfehlen.</p>
+            <p>SEO.</p>
+            <p>Ein paar Blogposts, angefangen zwischen zwei Kundenterminen.</p>
+            <p>Instagram, weil man ja sichtbar sein muss.</p>
+            <p>Vielleicht noch Facebook-Gruppen.</p>
+            <p>Man postet etwas, wartet ein paar Tage und schaut wieder rein.</p>
             <p>Und irgendwann ist man einfach nur frustriert.</p>
             <p>Weil niemand genau sagen kann, woran es liegt.</p>
             <p>
