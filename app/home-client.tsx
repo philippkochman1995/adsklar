@@ -52,13 +52,13 @@ export default function Home() {
         <div className="hero-copy">
           <p className="kicker hero-in delay-1">Google Ads für Unternehmen</p>
           <h1 className="hero-in delay-2">
-            Endlich auf Platz eins bei Google.
+            Endlich auf Google gefunden werden.
           </h1>
           <p className="hero-text hero-in delay-3">
-            Wir sorgen dafür, dass Ihre Anzeigen bei den richtigen
-            Suchanfragen sichtbar werden. Mit 3 klaren Bausteinen:
-            Kampagnen, die sauber aufgebaut sind, Tracking, dem man vertrauen
-            kann, und Optimierung, die laufend passiert.
+            Wir machen sichtbar, was heute fehlt: 100 % messbare Kontaktpunkte,
+            3 klare Kampagnen-Ebenen und alle 14 Tage Optimierung. Damit Ihr
+            Budget nicht irgendwo landet, sondern bei Suchanfragen mit echter
+            Kaufabsicht.
           </p>
           <div className="hero-actions hero-in delay-4">
             <Button asChild size="lg" className="blue-button">
@@ -142,31 +142,43 @@ export default function Home() {
         </div>
         <div className="section-content reveal">
           <div className="story-copy">
-            <p>Viele Google-Ads-Konten sehen auf den ersten Blick okay aus.</p>
-            <p>Es gibt Kampagnen.</p>
-            <p>Es gibt Klicks.</p>
-            <p>Manchmal gibt es sogar Anfragen.</p>
-            <p>Aber dann kommt die eigentliche Frage.</p>
+            <p>Viele Unternehmen haben schon eine Website.</p>
+            <p>Oft sogar eine gute.</p>
             <p>
-              <strong>Welche Suchanfragen bringen wirklich Umsatz?</strong>
+              Sie ist sauber gestaltet. Die Leistungen stehen drin. Das
+              Kontaktformular funktioniert.
             </p>
-            <p>Und welche verbrennen nur Budget?</p>
+            <p>Und trotzdem passiert zu wenig.</p>
+            <p>Kaum Anfragen.</p>
+            <p>Keine planbaren Kunden.</p>
+            <p>Also probiert man SEO.</p>
+            <p>Ein paar Blogposts. Halb fertig. Halb aus Überzeugung.</p>
+            <p>Dann ein bisschen Instagram.</p>
+            <p>Vielleicht Facebook-Gruppen.</p>
+            <p>Man postet, wartet, schaut in die Zahlen.</p>
+            <p>Und irgendwann ist man einfach nur frustriert.</p>
+            <p>Weil niemand genau sagen kann, woran es liegt.</p>
             <p>
-              Genau da wird es oft unsauber. Tracking ist halb eingerichtet.
-              Kampagnen sind über Jahre gewachsen. Entscheidungen passieren
-              aus dem Bauch heraus.
+              <strong>Liegt es an der Website? Am Angebot? Am Traffic?</strong>
             </p>
-            <p>Das ist kein Drama.</p>
-            <p>Aber es ist der Grund, warum Ergebnisse schwanken.</p>
+            <p>Oder sehen einfach die falschen Menschen das Richtige?</p>
             <p>
-              Deshalb starten wir nicht mit noch mehr Anzeigen. Wir starten
-              darunter: beim Konto, bei den Suchbegriffen, bei der Messung.
+              Genau an diesem Punkt wird Google Ads interessant. Nicht als
+              weiterer Marketing-Versuch, sondern als kontrollierter Test:
+              Welche Suchanfragen bringen Menschen auf Ihre Seite, die gerade
+              wirklich suchen?
+            </p>
+            <p>Und was passiert danach?</p>
+            <p>
+              Wir starten deshalb nicht mit mehr Content oder mehr Posts. Wir
+              starten mit Klarheit: Kampagnen, Tracking, Suchbegriffe,
+              Ergebnisse.
             </p>
             <p>
-              Erst wenn klar ist, was funktioniert, wird optimiert.
+              Erst dann weiß man, was wirklich funktioniert.
             </p>
             <p>
-              <strong>Schritt für Schritt. Nicht nach Gefühl.</strong>
+              <strong>Und was nur beschäftigt hält.</strong>
             </p>
           </div>
 

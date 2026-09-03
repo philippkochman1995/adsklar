@@ -6,7 +6,7 @@ const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Endlich auf Platz eins bei Google | ads klar",
+  title: "Endlich auf Google gefunden werden | ads klar",
   description:
     "Google Ads für Unternehmen: klare Kampagnen, sauberes Tracking und laufende Optimierung. Transparent betreut durch ads klar.",
   icons: {
