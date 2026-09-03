@@ -18,8 +18,8 @@ import { Textarea } from "@/components/ui/textarea";
 const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const Logo = () => (
-  <span className="logo" aria-label="Klar Ads">
-    klar <span>ads</span>
+  <span className="logo" aria-label="ads klar">
+    ads <span>klar</span>
     <i aria-hidden="true" />
   </span>
 );
@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a href="#top" aria-label="Klar Ads – Startseite">
+        <a href="#top" aria-label="ads klar – Startseite">
           <Logo />
         </a>
         <nav aria-label="Seitennavigation">
@@ -56,8 +56,9 @@ export default function Home() {
           </h1>
           <p className="hero-text hero-in delay-3">
             Wir sorgen dafür, dass Ihre Anzeigen bei den richtigen
-            Suchanfragen sichtbar werden. Mit klaren Kampagnen, sauberem
-            Tracking und laufender Optimierung.
+            Suchanfragen sichtbar werden. Mit 3 klaren Bausteinen:
+            Kampagnen, die sauber aufgebaut sind, Tracking, dem man vertrauen
+            kann, und Optimierung, die laufend passiert.
           </p>
           <div className="hero-actions hero-in delay-4">
             <Button asChild size="lg" className="blue-button">
@@ -115,8 +116,8 @@ export default function Home() {
               <div className="position-label">
                 <span>1</span> Erste Position
               </div>
-              <p><strong>Gesponsert</strong> · klarads.de</p>
-              <h3>Klar Ads | Google Ads, klar betreut</h3>
+              <p><strong>Gesponsert</strong> · adsklar.de</p>
+              <h3>ads klar | Google Ads, klar betreut</h3>
               <div>
                 Strukturierte Kampagnen, sauberes Tracking und direkte
                 Betreuung für Ihr Unternehmen.
@@ -137,26 +138,36 @@ export default function Home() {
       <section className="content-section page-grid" id="arbeitsweise">
         <div className="section-label reveal">
           <p className="kicker">Wie es funktioniert</p>
-          <h2>Erst verstehen. Dann optimieren.</h2>
+          <h2>Erst verstehen. Dann besser werden.</h2>
         </div>
         <div className="section-content reveal">
-          <div className="problem-solution">
-            <article>
-              <span className="tag red-tag">Das Problem</span>
-              <h3>Das Konto läuft. Die Wirkung bleibt unklar.</h3>
-              <p>
-                Kampagnen liefern Klicks und Anfragen. Trotzdem ist oft nicht
-                klar, was gute Ergebnisse bringt und wo Budget verloren geht.
-              </p>
-            </article>
-            <article>
-              <span className="tag blue-tag">Die Lösung</span>
-              <h3>Ein klarer Plan für Konto und Budget.</h3>
-              <p>
-                Wir prüfen Konto und Tracking, setzen Prioritäten und erklären
-                jede wichtige Änderung. Kurz und nachvollziehbar.
-              </p>
-            </article>
+          <div className="story-copy">
+            <p>Viele Google-Ads-Konten sehen auf den ersten Blick okay aus.</p>
+            <p>Es gibt Kampagnen.</p>
+            <p>Es gibt Klicks.</p>
+            <p>Manchmal gibt es sogar Anfragen.</p>
+            <p>Aber dann kommt die eigentliche Frage.</p>
+            <p>
+              <strong>Welche Suchanfragen bringen wirklich Umsatz?</strong>
+            </p>
+            <p>Und welche verbrennen nur Budget?</p>
+            <p>
+              Genau da wird es oft unsauber. Tracking ist halb eingerichtet.
+              Kampagnen sind über Jahre gewachsen. Entscheidungen passieren
+              aus dem Bauch heraus.
+            </p>
+            <p>Das ist kein Drama.</p>
+            <p>Aber es ist der Grund, warum Ergebnisse schwanken.</p>
+            <p>
+              Deshalb starten wir nicht mit noch mehr Anzeigen. Wir starten
+              darunter: beim Konto, bei den Suchbegriffen, bei der Messung.
+            </p>
+            <p>
+              Erst wenn klar ist, was funktioniert, wird optimiert.
+            </p>
+            <p>
+              <strong>Schritt für Schritt. Nicht nach Gefühl.</strong>
+            </p>
           </div>
 
           <div className="illustrated-steps">
@@ -227,7 +238,7 @@ export default function Home() {
         </div>
         <div className="section-content about-content reveal">
           <p className="large-copy">
-            Klar Ads ist eine spezialisierte Google Ads Agentur. Wir arbeiten
+            ads klar ist eine spezialisierte Google Ads Agentur. Wir arbeiten
             mit wenigen Unternehmen eng zusammen.
           </p>
           <p>
@@ -271,8 +282,8 @@ export default function Home() {
             <a href="tel:+493055520184">
               <Phone aria-hidden="true" /> +49 30 555 20 184
             </a>
-            <a href="mailto:lea@klar-ads.de">
-              <Mail aria-hidden="true" /> lea@klar-ads.de
+            <a href="mailto:lea@adsklar.de">
+              <Mail aria-hidden="true" /> lea@adsklar.de
             </a>
           </div>
         </div>

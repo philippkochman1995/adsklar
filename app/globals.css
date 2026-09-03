@@ -508,6 +508,27 @@ a {
   line-height: 1.72;
 }
 
+.story-copy {
+  max-width: 650px;
+  padding-top: 4px;
+}
+
+.story-copy p {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.12rem, 1.55vw, 1.42rem);
+  line-height: 1.72;
+  letter-spacing: -0.018em;
+}
+
+.story-copy p + p {
+  margin-top: 22px;
+}
+
+.story-copy strong {
+  font-weight: 600;
+}
+
 .illustrated-steps {
   margin-top: 72px;
   display: grid;

@@ -1,6 +1,6 @@
 {
-  "name": "klar-google-ads",
-  "displayName": "Klar Ads — Google Ads Agentur",
+  "name": "ads-klar-google-ads",
+  "displayName": "ads klar — Google Ads Agentur",
   "version": "0.1.0",
   "private": true,
   "engines": {
