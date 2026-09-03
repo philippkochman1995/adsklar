@@ -138,7 +138,7 @@ export default function Home() {
       <section className="content-section page-grid" id="arbeitsweise">
         <div className="section-label reveal">
           <p className="kicker">Wie es funktioniert</p>
-          <h2>Warum Kunden Ihr Unternehmen nicht finden.</h2>
+          <h2>Warum Kunden Ihr Unternehmen nicht finden</h2>
         </div>
         <div className="section-content reveal">
           <div className="story-copy">
