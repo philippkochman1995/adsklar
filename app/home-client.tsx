@@ -142,44 +142,49 @@ export default function Home() {
         </div>
         <div className="section-content reveal">
           <div className="story-copy">
-            <p>Sie haben eine Website gebaut.</p>
-            <p>Vielleicht sogar viel Zeit reingesteckt.</p>
+            <p>Sie haben eine Website.</p>
+            <p>Wahrscheinlich hat das zwei Monate gedauert.</p>
             <p>
-              Die Texte wurden überarbeitet. Die Leistungen sind erklärt. Das
-              Kontaktformular ist da.
+              Texte schreiben. Bilder aussuchen. Seiten bauen. Noch einmal
+              alles ändern.
             </p>
-            <p>Dann geht die Seite online.</p>
-            <p>Und erst mal passiert fast nichts.</p>
-            <p>Ein paar Besucher vielleicht.</p>
-            <p>Aber keine regelmäßigen Anfragen.</p>
-            <p>Also macht man das, was alle empfehlen.</p>
-            <p>SEO.</p>
-            <p>Ein paar Blogposts, angefangen zwischen zwei Kundenterminen.</p>
-            <p>Instagram, weil man ja sichtbar sein muss.</p>
-            <p>Vielleicht noch Facebook-Gruppen.</p>
-            <p>Man postet etwas, wartet ein paar Tage und schaut wieder rein.</p>
-            <p>Und irgendwann ist man einfach nur frustriert.</p>
-            <p>Weil niemand genau sagen kann, woran es liegt.</p>
+            <p>Dann ist sie online.</p>
+            <p>Und trotzdem kommen keine Kunden.</p>
+            <p>Hier und da eine Anfrage vielleicht.</p>
+            <p>Aber nichts, worauf man sich verlassen kann.</p>
+            <p>Also probiert man weiter.</p>
+            <p>Ein paar Blogposts.</p>
+            <p>Instagram.</p>
+            <p>Facebook-Gruppen.</p>
+            <p>Man ist beschäftigt. Aber es wird nicht wirklich besser.</p>
             <p>
-              <strong>Liegt es an der Website? Am Angebot? Am Traffic?</strong>
-            </p>
-            <p>Oder kommen einfach die falschen Leute auf die Seite?</p>
-            <p>
-              Genau da kann Google Ads helfen. Nicht, weil Anzeigen alles
-              lösen. Sondern weil man damit schneller sieht, wonach Menschen
-              wirklich suchen und ob sie danach Kontakt aufnehmen.
-            </p>
-            <p>Dann muss man nicht mehr raten.</p>
-            <p>
-              Man sieht, welche Suchbegriffe passen. Welche Anzeigen geklickt
-              werden. Und ob aus diesen Klicks echte Anfragen werden.
+              Das Problem ist dann meistens nicht die Website selbst.
             </p>
             <p>
-              Darum starten wir mit dem Konto und mit dem Tracking, bevor wir
-              einfach mehr Budget ausgeben.
+              <strong>
+                Das Problem ist, dass zu wenige passende Menschen sie finden.
+              </strong>
             </p>
             <p>
-              <strong>Erst messen. Dann verbessern.</strong>
+              Wir alle googeln, wenn wir etwas brauchen.
+            </p>
+            <p>
+              Und meistens klicken wir auf eines der ersten Ergebnisse.
+            </p>
+            <p>
+              Genau dort sollten Sie sichtbar sein, wenn jemand gerade
+              motiviert ist zu kaufen.
+            </p>
+            <p>
+              Google Ads ist dafür ein kontrollierter Test. Man sieht schnell,
+              welche Suchanfragen funktionieren, welche nicht und ob daraus
+              echte Anfragen entstehen.
+            </p>
+            <p>
+              Nur so kommt man raus aus dem Raten.
+            </p>
+            <p>
+              <strong>Und rein in Klarheit. Und zu Kunden.</strong>
             </p>
           </div>
 
