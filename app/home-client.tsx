@@ -67,10 +67,9 @@ export default function Home() {
             Endlich auf Google gefunden werden.
           </h1>
           <p className="hero-text hero-in delay-3">
-            Wir machen sichtbar, was heute fehlt: 100 % messbare Kontaktpunkte,
-            3 klare Kampagnen-Ebenen und alle 14 Tage Optimierung. Damit Ihr
-            Budget nicht irgendwo landet, sondern bei Suchanfragen mit echter
-            Kaufabsicht.
+            Wir sorgen dafür, dass Ihre Anzeigen bei den richtigen
+            Suchanfragen sichtbar werden. Mit klaren Kampagnen, sauberem
+            Tracking und laufender Optimierung.
           </p>
           <div className="hero-actions hero-in delay-4">
             <Button asChild size="lg" className="blue-button">
@@ -102,24 +101,12 @@ export default function Home() {
               <i />
               <i />
             </div>
-            <span>google.de</span>
           </div>
 
           <div className="search-page">
-            <div className="search-wordmark" aria-label="Google">
-              <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
-            </div>
-
             <div className="search-field">
-              <span className="search-query">google ads agentur berlin</span>
+              <span className="search-query">google ads agentur wien</span>
               <Search aria-hidden="true" />
-            </div>
-
-            <div className="search-tabs" aria-hidden="true">
-              <span>Alle</span>
-              <span>Bilder</span>
-              <span>Maps</span>
-              <span>Mehr</span>
             </div>
 
             <p className="search-count">Ergebnisse für Ihre Suche</p>
