@@ -15,19 +15,31 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
+const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const testimonials = [
-  [
-    "Nordwerk",
-    "Seit Google Ads sauber läuft, sehen wir endlich, welche Anfragen wirklich passen.",
-  ],
-  ["Studio Vela", "Nicht lauter geworden. Einfach messbarer."],
-  [
-    "Berg & Kraft",
-    "Wir wissen jetzt, welche Suchbegriffe Kunden bringen und welche nicht.",
-  ],
-  ["Lumen Bau", "Vorher viel probiert. Jetzt sehen wir, was funktioniert."],
-  ["Feldmann", "Endlich Anfragen, die zu unserem Angebot passen."],
-  ["Maison Lenz", "Klarer Blick auf Budget, Klicks und echte Kontakte."],
+  {
+    name: "Metermeilen",
+    logo: "/logos/metermeilen.png",
+    quote:
+      "Seit Google Ads sauber läuft, sehen wir endlich, welche Anfragen wirklich passen.",
+  },
+  {
+    name: "Heidenlind",
+    logo: "/logos/heidenlind.png",
+    quote:
+      "Wir wissen jetzt, welche Suchbegriffe Kunden bringen und welche nicht.",
+  },
+  {
+    name: "Óh lálá",
+    logo: "/logos/oh-lala.png",
+    quote: "Nicht lauter geworden. Einfach messbarer.",
+  },
+  {
+    name: "Frimo",
+    logo: "/logos/frimo.png",
+    quote: "Vorher viel probiert. Jetzt sehen wir, was funktioniert.",
+  },
 ] as const;
 
 const Logo = () => (
@@ -135,22 +147,26 @@ export default function Home() {
       </section>
 
       <section className="testimonial-strip" aria-label="Kundenstimmen">
-        <p>Unternehmen, die mit klareren Suchkampagnen arbeiten</p>
         <div className="testimonial-marquee">
           <div className="testimonial-track">
-            {testimonials.map(([name, quote]) => (
+            {testimonials.map(({ name, logo, quote }) => (
               <article className="testimonial-card" key={name}>
-                <div className="fake-logo">{name}</div>
+                <img
+                  className="testimonial-logo"
+                  src={`${assetPrefix}${logo}`}
+                  alt={name}
+                  loading="lazy"
+                />
                 <blockquote>{quote}</blockquote>
               </article>
             ))}
-            {testimonials.map(([name, quote]) => (
+            {testimonials.map(({ name, logo, quote }) => (
               <article
                 className="testimonial-card"
                 key={`${name}-duplicate`}
                 aria-hidden="true"
               >
-                <div className="fake-logo">{name}</div>
+                <img className="testimonial-logo" src={`${assetPrefix}${logo}`} alt="" />
                 <blockquote>{quote}</blockquote>
               </article>
             ))}
