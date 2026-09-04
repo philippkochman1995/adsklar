@@ -218,115 +218,123 @@ export default function Home() {
             <p>
               <strong>Und rein in Klarheit. Und zu Kunden.</strong>
             </p>
-            <div className="story-cta">
-              <strong>
-                Jetzt Google Ads Test starten und endlich zur Marketing-Klarheit
-                kommen
-              </strong>
-              <a className="story-link" href="#kontakt">
-                Kontakt <ArrowRight aria-hidden="true" />
-              </a>
-            </div>
           </div>
 
-        </div>
-      </section>
+          <div className="story-contact" id="kontakt">
+            <div className="story-contact-intro">
+              <p className="kicker">Nächste Schritte</p>
+              <h3>
+                Ihren kontrollierten Google Ads Test starten und endlich
+                Marketing-Klarheit bekommen
+              </h3>
+              <p className="section-note">
+                Wir sprechen über Ihre Ausgangslage und sagen offen, ob wir
+                helfen können.
+              </p>
 
-      <section className="content-section page-grid contact-section" id="kontakt">
-        <div className="section-label reveal">
-          <p className="kicker">Nächste Schritte</p>
-          <h2>
-            Ihren kontrollierten Google Ads Test starten und endlich
-            Marketing-Klarheit bekommen
-          </h2>
-          <p className="section-note">
-            Wir sprechen über Ihre Ausgangslage und sagen offen, ob wir helfen
-            können.
-          </p>
-
-          <div className="contact-person">
-            <div className="person-avatar">AK</div>
-            <div>
-              <strong>Alexander Kochman</strong>
-              <span>Beratung & Strategie</span>
-            </div>
-          </div>
-          <div className="contact-links">
-            <a href="tel:+493055520184">
-              <Phone aria-hidden="true" /> Tel: +49 30 555 20 184
-            </a>
-            <a href="mailto:alexander@adsklar.de">
-              <Mail aria-hidden="true" /> Mail: alexander@adsklar.de
-            </a>
-          </div>
-        </div>
-
-        <div className="section-content reveal">
-          {sent ? (
-            <div className="success-state" role="status">
-              <span>
-                <Check aria-hidden="true" />
-              </span>
-              <h3>Danke für Ihre Anfrage.</h3>
-              <p>Alexander meldet sich und bestätigt den Termin.</p>
-              <Button variant="outline" onClick={() => setSent(false)}>
-                Neue Anfrage
-              </Button>
-            </div>
-          ) : (
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-grid">
-                <div className="field">
-                  <Label htmlFor="name">Name</Label>
-                  <Input id="name" name="name" placeholder="Vor- und Nachname" required />
-                </div>
-                <div className="field">
-                  <Label htmlFor="company">Unternehmen</Label>
-                  <Input id="company" name="company" placeholder="Unternehmensname" />
-                </div>
-                <div className="field">
-                  <Label htmlFor="email">E-Mail</Label>
-                  <Input id="email" name="email" type="email" placeholder="name@unternehmen.de" required />
-                </div>
-                <div className="field">
-                  <Label htmlFor="phone">Telefon</Label>
-                  <Input id="phone" name="phone" type="tel" placeholder="Optional" />
-                </div>
-                <div className="field">
-                  <Label htmlFor="date">Wunschtermin</Label>
-                  <Input id="date" name="date" type="date" required />
-                </div>
-                <div className="field">
-                  <Label htmlFor="time">Zeit</Label>
-                  <Select name="time" defaultValue="morning">
-                    <SelectTrigger id="time" className="select-trigger">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="morning">09:00–12:00 Uhr</SelectItem>
-                      <SelectItem value="afternoon">12:00–15:00 Uhr</SelectItem>
-                      <SelectItem value="late">15:00–17:00 Uhr</SelectItem>
-                    </SelectContent>
-                  </Select>
+              <div className="contact-person">
+                <div className="person-avatar">AK</div>
+                <div>
+                  <strong>Alexander Kochman</strong>
+                  <span>Beratung & Strategie</span>
                 </div>
               </div>
-              <div className="field message-field">
-                <Label htmlFor="message">Kurze Nachricht</Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  placeholder="Worum geht es?"
-                  rows={4}
-                />
+              <div className="contact-links">
+                <a href="tel:+493055520184">
+                  <Phone aria-hidden="true" /> Tel: +49 30 555 20 184
+                </a>
+                <a href="mailto:alexander@adsklar.de">
+                  <Mail aria-hidden="true" /> Mail: alexander@adsklar.de
+                </a>
               </div>
-              <div className="form-footer">
-                <p>Ihre Angaben werden nur zur Kontaktaufnahme verwendet.</p>
-                <Button type="submit" size="lg" className="blue-button">
-                  Termin anfragen <ArrowRight aria-hidden="true" />
+            </div>
+
+            {sent ? (
+              <div className="success-state" role="status">
+                <span>
+                  <Check aria-hidden="true" />
+                </span>
+                <h3>Danke für Ihre Anfrage.</h3>
+                <p>Alexander meldet sich und bestätigt den Termin.</p>
+                <Button variant="outline" onClick={() => setSent(false)}>
+                  Neue Anfrage
                 </Button>
               </div>
-            </form>
-          )}
+            ) : (
+              <form className="contact-form" onSubmit={handleSubmit}>
+                <div className="form-grid">
+                  <div className="field">
+                    <Label htmlFor="name">Name</Label>
+                    <Input
+                      id="name"
+                      name="name"
+                      placeholder="Vor- und Nachname"
+                      required
+                    />
+                  </div>
+                  <div className="field">
+                    <Label htmlFor="company">Unternehmen</Label>
+                    <Input
+                      id="company"
+                      name="company"
+                      placeholder="Unternehmensname"
+                    />
+                  </div>
+                  <div className="field">
+                    <Label htmlFor="email">E-Mail</Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="name@unternehmen.de"
+                      required
+                    />
+                  </div>
+                  <div className="field">
+                    <Label htmlFor="phone">Telefon</Label>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="Optional"
+                    />
+                  </div>
+                  <div className="field">
+                    <Label htmlFor="date">Wunschtermin</Label>
+                    <Input id="date" name="date" type="date" required />
+                  </div>
+                  <div className="field">
+                    <Label htmlFor="time">Zeit</Label>
+                    <Select name="time" defaultValue="morning">
+                      <SelectTrigger id="time" className="select-trigger">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="morning">09:00–12:00 Uhr</SelectItem>
+                        <SelectItem value="afternoon">12:00–15:00 Uhr</SelectItem>
+                        <SelectItem value="late">15:00–17:00 Uhr</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+                <div className="field message-field">
+                  <Label htmlFor="message">Kurze Nachricht</Label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    placeholder="Worum geht es?"
+                    rows={4}
+                  />
+                </div>
+                <div className="form-footer">
+                  <p>Ihre Angaben werden nur zur Kontaktaufnahme verwendet.</p>
+                  <Button type="submit" size="lg" className="blue-button">
+                    Termin anfragen <ArrowRight aria-hidden="true" />
+                  </Button>
+                </div>
+              </form>
+            )}
+          </div>
         </div>
       </section>
 
