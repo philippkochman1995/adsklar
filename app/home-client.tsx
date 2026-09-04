@@ -217,36 +217,40 @@ export default function Home() {
               <strong>Und rein in Klarheit. Und zu Kunden.</strong>
             </p>
           </div>
+        </div>
+      </section>
 
-          <div className="story-contact" id="kontakt">
-            <div className="story-contact-intro">
-              <p className="kicker">Nächste Schritte</p>
-              <h3>
-                Ihren kontrollierten Google Ads Test starten und endlich
-                Marketing-Klarheit bekommen
-              </h3>
-              <p className="section-note">
-                Wir sprechen über Ihre Ausgangslage und sagen offen, ob wir
-                helfen können.
-              </p>
+      <section className="cta-section" id="kontakt">
+        <div className="cta-inner">
+          <div className="cta-intro reveal">
+            <p className="kicker">Nächste Schritte</p>
+            <h2>
+              Ihren kontrollierten Google Ads Test starten und endlich
+              Marketing-Klarheit bekommen
+            </h2>
+            <p className="section-note">
+              Wir sprechen über Ihre Ausgangslage und sagen offen, ob wir
+              helfen können.
+            </p>
 
-              <div className="contact-person">
-                <div className="person-avatar">AK</div>
-                <div>
-                  <strong>Alexander Kochman</strong>
-                  <span>Beratung & Strategie</span>
-                </div>
-              </div>
-              <div className="contact-links">
-                <a href="tel:+493055520184">
-                  <Phone aria-hidden="true" /> Tel: +49 30 555 20 184
-                </a>
-                <a href="mailto:alexander@adsklar.de">
-                  <Mail aria-hidden="true" /> Mail: alexander@adsklar.de
-                </a>
+            <div className="contact-person">
+              <div className="person-avatar">AK</div>
+              <div>
+                <strong>Alexander Kochman</strong>
+                <span>Beratung & Strategie</span>
               </div>
             </div>
+            <div className="contact-links">
+              <a href="tel:+493055520184">
+                <Phone aria-hidden="true" /> Tel: +49 30 555 20 184
+              </a>
+              <a href="mailto:alexander@adsklar.de">
+                <Mail aria-hidden="true" /> Mail: alexander@adsklar.de
+              </a>
+            </div>
+          </div>
 
+          <div className="cta-form reveal">
             {sent ? (
               <div className="success-state" role="status">
                 <span>
@@ -336,14 +340,16 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="site-footer">
-        <Logo />
-        <span>Google Ads, klar betreut.</span>
-        <div>
-          <a href="#">Impressum</a>
-          <a href="#">Datenschutz</a>
-        </div>
-      </footer>
+      <div className="site-footer-wrap">
+        <footer className="site-footer">
+          <Logo />
+          <span>Google Ads, klar betreut.</span>
+          <div>
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+          </div>
+        </footer>
+      </div>
     </main>
   );
 }
