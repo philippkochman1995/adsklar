@@ -395,7 +395,7 @@ a {
 
 .testimonial-strip {
   overflow: hidden;
-  padding: 34px 0 38px;
+  padding: 30px 0;
   border-top: 1px solid var(--line);
   background: #fff;
 }
@@ -429,37 +429,20 @@ a {
 .testimonial-track {
   width: max-content;
   display: flex;
+  align-items: center;
   gap: 18px;
   padding-left: max(24px, calc((100vw - 1200px) / 2));
   animation: testimonials-left 34s linear infinite;
 }
 
-.testimonial-card {
-  width: 310px;
-  min-height: 118px;
-  padding: 22px 24px;
-  display: grid;
-  align-content: start;
-  gap: 18px;
-  border: 1px solid #e8eaed;
-  border-radius: 8px;
-  background: #fff;
-}
-
 .testimonial-logo {
+  flex: none;
   width: auto;
-  height: 30px;
-  max-width: 150px;
+  height: 38px;
+  max-width: 170px;
+  margin-inline: 26px;
   object-fit: contain;
-  object-position: left center;
   opacity: 0.5;
-}
-
-.testimonial-card blockquote {
-  margin: 0;
-  color: rgba(32, 33, 36, 0.68);
-  font-size: 0.82rem;
-  line-height: 1.55;
 }
 
 .content-section {
@@ -1026,7 +1009,7 @@ a {
   }
 
   .testimonial-strip {
-    padding: 28px 0 32px;
+    padding: 24px 0;
   }
 
   .testimonial-track {
@@ -1035,10 +1018,10 @@ a {
     animation-duration: 28s;
   }
 
-  .testimonial-card {
-    width: 270px;
-    min-height: 126px;
-    padding: 20px;
+  .testimonial-logo {
+    height: 30px;
+    max-width: 132px;
+    margin-inline: 16px;
   }
 
   .search-page {

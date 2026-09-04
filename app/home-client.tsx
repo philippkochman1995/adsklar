@@ -17,30 +17,16 @@ import { Textarea } from "@/components/ui/textarea";
 
 const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-const testimonials = [
-  {
-    name: "Metermeilen",
-    logo: "/logos/metermeilen.png",
-    quote:
-      "Seit Google Ads sauber läuft, sehen wir endlich, welche Anfragen wirklich passen.",
-  },
-  {
-    name: "Heidenlind",
-    logo: "/logos/heidenlind.png",
-    quote:
-      "Wir wissen jetzt, welche Suchbegriffe Kunden bringen und welche nicht.",
-  },
-  {
-    name: "Óh lálá",
-    logo: "/logos/oh-lala.png",
-    quote: "Nicht lauter geworden. Einfach messbarer.",
-  },
-  {
-    name: "Frimo",
-    logo: "/logos/frimo.png",
-    quote: "Vorher viel probiert. Jetzt sehen wir, was funktioniert.",
-  },
+const clientLogos = [
+  { name: "Metermeilen", logo: "/logos/metermeilen.png" },
+  { name: "Heidenlind", logo: "/logos/heidenlind.png" },
+  { name: "Óh lálá", logo: "/logos/oh-lala.png" },
+  { name: "Frimo", logo: "/logos/frimo.png" },
 ] as const;
+
+// The marquee scrolls one half of the track out of view, so each half has to be
+// wider than the viewport before it loops.
+const logoRun = [...clientLogos, ...clientLogos, ...clientLogos];
 
 const Logo = () => (
   <span className="logo" aria-label="ads klar">
@@ -149,26 +135,22 @@ export default function Home() {
       <section className="testimonial-strip" aria-label="Kundenstimmen">
         <div className="testimonial-marquee">
           <div className="testimonial-track">
-            {testimonials.map(({ name, logo, quote }) => (
-              <article className="testimonial-card" key={name}>
-                <img
-                  className="testimonial-logo"
-                  src={`${assetPrefix}${logo}`}
-                  alt={name}
-                  loading="lazy"
-                />
-                <blockquote>{quote}</blockquote>
-              </article>
+            {logoRun.map(({ name, logo }, index) => (
+              <img
+                className="testimonial-logo"
+                key={`${name}-${index}`}
+                src={`${assetPrefix}${logo}`}
+                alt={name}
+              />
             ))}
-            {testimonials.map(({ name, logo, quote }) => (
-              <article
-                className="testimonial-card"
-                key={`${name}-duplicate`}
+            {logoRun.map(({ name, logo }, index) => (
+              <img
+                className="testimonial-logo"
+                key={`${name}-${index}-duplicate`}
+                src={`${assetPrefix}${logo}`}
+                alt=""
                 aria-hidden="true"
-              >
-                <img className="testimonial-logo" src={`${assetPrefix}${logo}`} alt="" />
-                <blockquote>{quote}</blockquote>
-              </article>
+              />
             ))}
           </div>
         </div>
