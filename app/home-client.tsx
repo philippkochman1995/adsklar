@@ -132,7 +132,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="testimonial-strip" aria-label="Kundenstimmen">
+      <section className="testimonial-strip" aria-label="Kunden, die mit uns arbeiten">
         <div className="testimonial-marquee">
           <div className="testimonial-track">
             {logoRun.map(({ name, logo }, index) => (
