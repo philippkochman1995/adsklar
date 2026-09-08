@@ -188,23 +188,23 @@ export default function Home() {
               Und meistens klicken wir auf eines der ersten Ergebnisse.
             </p>
             <p>
-              <strong>
-                Menschen kaufen, wenn sie motiviert sind zu kaufen.
-              </strong>
+              Deshalb ist es essentiell, bei Google ganz vorne zu sein.
             </p>
             <p>
-              Genau dann sollten Sie sichtbar sein.
+              Und sofern Sie das nicht schon sind, gelingt das durch Google
+              Ads.
             </p>
             <p>
-              Google Ads ist dafür ein kontrollierter Test. Man sieht schnell,
-              welche Suchanfragen funktionieren, welche nicht und ob daraus
-              echte Anfragen entstehen.
+              Google Ads sind bezahlte Anzeigen bei Google, die wir schalten
+              können, um unter relevanten Suchbegriffen gefunden zu werden,
+              zum Beispiel Installateur Wien 1090.
             </p>
             <p>
-              Nur so kommt man raus aus dem Raten.
+              Je smarter man die Kampagne einrichtet und optimiert, desto mehr
+              Anfragen lassen sich aus dem Werbebudget rausholen.
             </p>
             <p>
-              <strong>Und rein in Klarheit. Und zu Kunden.</strong>
+              <strong>Und genau das machen wir.</strong>
             </p>
           </div>
         </div>
