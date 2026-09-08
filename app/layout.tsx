@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
@@ -10,8 +8,8 @@ export const metadata: Metadata = {
   description:
     "Google Ads für Unternehmen: klare Kampagnen, sauberes Tracking und laufende Optimierung. Transparent betreut durch ads klar.",
   icons: {
-    icon: `${assetPrefix}/favicon.svg`,
-    shortcut: `${assetPrefix}/favicon.svg`,
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
   },
 };
 

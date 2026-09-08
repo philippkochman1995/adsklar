@@ -33,11 +33,12 @@ jobs:
       - name: Build static site
         env:
           GITHUB_PAGES: "true"
-          NEXT_PUBLIC_BASE_PATH: /adsklar
         run: npm run build
 
       - name: Prepare Pages artifact
-        run: touch dist/client/.nojekyll
+        run: |
+          touch dist/client/.nojekyll
+          echo "www.adsklar.at" > dist/client/CNAME
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
