@@ -15,19 +15,6 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
-const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
-const clientLogos = [
-  { name: "Metermeilen", logo: "/logos/metermeilen.png" },
-  { name: "Heidenlind", logo: "/logos/heidenlind.png" },
-  { name: "Óh lálá", logo: "/logos/oh-lala.png" },
-  { name: "Frimo", logo: "/logos/frimo.png" },
-] as const;
-
-// The marquee scrolls one half of the track out of view, so each half has to be
-// wider than the viewport before it loops.
-const logoRun = [...clientLogos, ...clientLogos, ...clientLogos];
-
 const Logo = () => (
   <span className="logo" aria-label="ads klar">
     ads <span>klar</span>
@@ -129,30 +116,6 @@ export default function Home() {
           </div>
 
           <p className="example-note">Beispielhafte Suchdarstellung</p>
-        </div>
-      </section>
-
-      <section className="testimonial-strip" aria-label="Kunden, die mit uns arbeiten">
-        <div className="testimonial-marquee">
-          <div className="testimonial-track">
-            {logoRun.map(({ name, logo }, index) => (
-              <img
-                className="testimonial-logo"
-                key={`${name}-${index}`}
-                src={`${assetPrefix}${logo}`}
-                alt={name}
-              />
-            ))}
-            {logoRun.map(({ name, logo }, index) => (
-              <img
-                className="testimonial-logo"
-                key={`${name}-${index}-duplicate`}
-                src={`${assetPrefix}${logo}`}
-                alt=""
-                aria-hidden="true"
-              />
-            ))}
-          </div>
         </div>
       </section>
 
