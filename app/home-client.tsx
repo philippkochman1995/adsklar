@@ -153,59 +153,26 @@ export default function Home() {
         </div>
         <div className="section-content reveal">
           <div className="story-copy">
-            <p>Sie haben eine Website.</p>
-            <p>Wahrscheinlich hat das zwei Monate gedauert.</p>
-            <p>
-              Texte schreiben. Bilder aussuchen. Seiten bauen. Noch einmal
-              alles ändern.
-            </p>
-            <p>Dann ist sie online.</p>
-            <p>Und trotzdem kommen keine Kunden.</p>
-            <p>Hier und da eine Anfrage vielleicht.</p>
-            <p>Aber nichts, worauf man sich verlassen kann.</p>
-            <p>Also probiert man weiter.</p>
-            <p>Ein paar Blogposts.</p>
-            <p>Instagram.</p>
-            <p>Facebook-Gruppen.</p>
-            <p>Man ist beschäftigt. Aber es wird nicht wirklich besser.</p>
-            <p>
-              <strong>
-                Ich verstehe das, ich war selbst an diesem Punkt.
-              </strong>
-            </p>
-            <p>
-              Das Problem ist dann meistens nicht die Website selbst.
-            </p>
-            <p>
-              <strong>
-                Das Problem ist, dass zu wenige passende Menschen sie finden.
-              </strong>
-            </p>
-            <p>
-              Wir alle googeln, wenn wir etwas brauchen.
-            </p>
-            <p>
-              Und meistens klicken wir auf eines der ersten Ergebnisse.
-            </p>
-            <p>
-              Deshalb ist es essentiell, bei Google ganz vorne zu sein.
-            </p>
-            <p>
-              Und sofern Sie das nicht schon sind, gelingt das durch Google
-              Ads.
-            </p>
-            <p>
-              Google Ads sind bezahlte Anzeigen bei Google, die wir schalten
-              können, um unter relevanten Suchbegriffen gefunden zu werden,
-              zum Beispiel Installateur Wien 1090.
-            </p>
-            <p>
-              Je smarter man die Kampagne einrichtet und optimiert, desto mehr
-              Anfragen lassen sich aus dem Werbebudget rausholen.
-            </p>
-            <p>
-              <strong>Und genau das machen wir.</strong>
-            </p>
+            <p>Wir alle googeln, wenn wir etwas brauchen.</p>
+
+<p>Und meistens klicken wir auf eines der ersten Ergebnisse.</p>
+
+<p>
+  Deshalb ist es essentiell, bei Google ganz vorne zu sein.<br>
+  Und sofern Sie das nicht schon sind, gelingt das durch Google Ads.
+</p>
+
+<p>
+  Google Ads sind bezahlte Anzeigen bei Google, die wir schalten können, um unter relevanten Suchbegriffen gefunden zu werden
+  (z. B. „Installateur Wien 1090“).
+</p>
+
+<p>
+  Je smarter man die Kampagne einrichtet und optimiert,<br>
+  desto mehr Anfragen lassen sich aus dem Werbebudget herausholen.
+</p>
+
+<p>Und genau das machen wir.</p>
           </div>
         </div>
       </section>
