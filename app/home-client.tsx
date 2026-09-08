@@ -22,11 +22,38 @@ const Logo = () => (
   </span>
 );
 
+const contactEmail = "office@adsklar.at";
+const contactPhoneDisplay = "0665 672 217 83";
+const contactPhoneHref = "tel:+4366567221783";
+const timeLabels: Record<string, string> = {
+  morning: "09:00-12:00 Uhr",
+  afternoon: "12:00-15:00 Uhr",
+  late: "15:00-17:00 Uhr",
+};
+
 export default function Home() {
   const [sent, setSent] = useState(false);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const timeValue = String(formData.get("time") ?? "");
+    const message = [
+      `Name: ${formData.get("name") ?? ""}`,
+      `Unternehmen: ${formData.get("company") ?? ""}`,
+      `E-Mail: ${formData.get("email") ?? ""}`,
+      `Telefon: ${formData.get("phone") ?? ""}`,
+      `Wunschtermin: ${formData.get("date") ?? ""}`,
+      `Zeit: ${timeLabels[timeValue] ?? timeValue}`,
+      "",
+      "Nachricht:",
+      `${formData.get("message") ?? ""}`,
+    ].join("\n");
+    const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(
+      "Google Ads Test anfragen",
+    )}&body=${encodeURIComponent(message)}`;
+
+    window.location.href = mailto;
     setSent(true);
   }
 
@@ -100,7 +127,7 @@ export default function Home() {
               <div className="position-label">
                 <span>1</span> Erste Position
               </div>
-              <p><strong>Gesponsert</strong> · adsklar.de</p>
+              <p><strong>Gesponsert</strong> · adsklar.at</p>
               <h3>ads klar | Google Ads, klar betreut</h3>
               <div>
                 Strukturierte Kampagnen, sauberes Tracking und direkte
@@ -204,11 +231,11 @@ export default function Home() {
               </div>
             </div>
             <div className="contact-links">
-              <a href="tel:+493055520184">
-                <Phone aria-hidden="true" /> Tel: +49 30 555 20 184
+              <a href={contactPhoneHref}>
+                <Phone aria-hidden="true" /> Tel: {contactPhoneDisplay}
               </a>
-              <a href="mailto:alexander@adsklar.de">
-                <Mail aria-hidden="true" /> Mail: alexander@adsklar.de
+              <a href={`mailto:${contactEmail}`}>
+                <Mail aria-hidden="true" /> Mail: {contactEmail}
               </a>
             </div>
           </div>
@@ -220,7 +247,7 @@ export default function Home() {
                   <Check aria-hidden="true" />
                 </span>
                 <h3>Danke für Ihre Anfrage.</h3>
-                <p>Alexander meldet sich und bestätigt den Termin.</p>
+                <p>Ihr Mailprogramm wurde mit den Angaben geöffnet.</p>
                 <Button variant="outline" onClick={() => setSent(false)}>
                   Neue Anfrage
                 </Button>
@@ -308,8 +335,8 @@ export default function Home() {
           <Logo />
           <span>Google Ads, klar betreut.</span>
           <div>
-            <a href="#">Impressum</a>
-            <a href="#">Datenschutz</a>
+            <a href="/impressum">Impressum</a>
+            <a href="/datenschutz">Datenschutz</a>
           </div>
         </footer>
       </div>
