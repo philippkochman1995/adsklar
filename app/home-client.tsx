@@ -158,7 +158,7 @@ export default function Home() {
 <p>Und meistens klicken wir auf eines der ersten Ergebnisse.</p>
 
 <p>
-  Deshalb ist es essentiell, bei Google ganz vorne zu sein.<br>
+  Deshalb ist es essentiell, bei Google ganz vorne zu sein.<br />
   Und sofern Sie das nicht schon sind, gelingt das durch Google Ads.
 </p>
 
@@ -168,7 +168,7 @@ export default function Home() {
 </p>
 
 <p>
-  Je smarter man die Kampagne einrichtet und optimiert,<br>
+  Je smarter man die Kampagne einrichtet und optimiert,<br />
   desto mehr Anfragen lassen sich aus dem Werbebudget herausholen.
 </p>
 
