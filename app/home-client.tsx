@@ -31,6 +31,39 @@ const timeLabels: Record<string, string> = {
   late: "15:00-17:00 Uhr",
 };
 
+const processSteps = [
+  {
+    number: "01",
+    title: "Analyse",
+    text: "Wir schauen zuerst, wo heute Sichtbarkeit verloren geht und welche Suchanfragen wirklich zu Ihrem Angebot passen.",
+    features: [
+      "Website und Angebot verstehen",
+      "relevante Suchbegriffe finden",
+      "Tracking und Ziele prüfen",
+    ],
+  },
+  {
+    number: "02",
+    title: "Einrichtung",
+    text: "Dann bauen wir die Kampagnen sauber auf, damit Budget nicht breit gestreut wird, sondern auf klare Kaufabsicht trifft.",
+    features: [
+      "Kampagnenstruktur erstellen",
+      "Anzeigen und Keywords anlegen",
+      "Kontaktpunkte messbar machen",
+    ],
+  },
+  {
+    number: "03",
+    title: "Laufende Betreuung",
+    text: "Nach dem Start wird nicht geraten. Wir werten aus, was passiert, und verbessern die Kampagnen laufend.",
+    features: [
+      "Suchbegriffe auswerten",
+      "Budget gezielt verschieben",
+      "alle 14 Tage optimieren",
+    ],
+  },
+];
+
 export default function Home() {
   const [sent, setSent] = useState(false);
 
@@ -64,7 +97,7 @@ export default function Home() {
           <Logo />
         </a>
         <nav aria-label="Seitennavigation">
-          <a href="#arbeitsweise">Arbeitsweise</a>
+          <a href="#prozess">Arbeitsweise</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
         <Button asChild className="blue-button header-button">
@@ -89,7 +122,7 @@ export default function Home() {
                 Erstgespräch buchen <ArrowRight aria-hidden="true" />
               </a>
             </Button>
-            <a className="plain-link" href="#arbeitsweise">
+            <a className="plain-link" href="#prozess">
               So arbeiten wir
             </a>
           </div>
@@ -153,26 +186,58 @@ export default function Home() {
         </div>
         <div className="section-content reveal">
           <div className="story-copy">
-            <p>Wir alle googeln, wenn wir etwas brauchen.</p>
+            <p>
+              <strong>Wir alle googeln, wenn wir etwas brauchen.</strong>
+            </p>
+            <p>Und meistens klicken wir auf eines der ersten Ergebnisse.</p>
+            <p>
+              Deshalb ist es essentiell,{" "}
+              <strong>bei Google ganz vorne zu sein.</strong>
+              <br />
+              Und sofern Sie das nicht schon sind, gelingt das durch Google
+              Ads.
+            </p>
+            <p>
+              Google Ads sind bezahlte Anzeigen bei Google, die wir schalten
+              können, um unter relevanten Suchbegriffen gefunden zu werden (z.
+              B. „Installateur Wien 1090“).
+            </p>
+            <p>
+              <strong>
+                Je smarter man die Kampagne einrichtet und optimiert,
+                <br />
+                desto mehr Anfragen lassen sich aus dem Werbebudget
+                herausholen.
+              </strong>
+            </p>
+            <p>Und genau das machen wir.</p>
+          </div>
+        </div>
+      </section>
 
-<p>Und meistens klicken wir auf eines der ersten Ergebnisse.</p>
+      <section className="process-section" id="prozess">
+        <div className="process-inner">
+          <div className="process-heading reveal">
+            <p className="kicker">So arbeiten wir</p>
+            <h2>Vom ersten Suchbegriff zur laufenden Anfrage.</h2>
+          </div>
 
-<p>
-  Deshalb ist es essentiell, bei Google ganz vorne zu sein.<br />
-  Und sofern Sie das nicht schon sind, gelingt das durch Google Ads.
-</p>
-
-<p>
-  Google Ads sind bezahlte Anzeigen bei Google, die wir schalten können, um unter relevanten Suchbegriffen gefunden zu werden
-  (z. B. „Installateur Wien 1090“).
-</p>
-
-<p>
-  Je smarter man die Kampagne einrichtet und optimiert,<br />
-  desto mehr Anfragen lassen sich aus dem Werbebudget herausholen.
-</p>
-
-<p>Und genau das machen wir.</p>
+          <div className="process-grid">
+            {processSteps.map((step) => (
+              <article className="process-card reveal" key={step.title}>
+                <span className="process-number">{step.number}</span>
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+                <ul>
+                  {step.features.map((feature) => (
+                    <li key={feature}>
+                      <Check aria-hidden="true" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </div>
       </section>
