@@ -35,6 +35,8 @@ const processSteps = [
   {
     number: "01",
     title: "Analyse",
+    image: "/illustrations/analyse.png",
+    imageAlt: "Lupe ueber einem Balkendiagramm",
     text: "Wir schauen zuerst, wo heute Sichtbarkeit verloren geht und welche Suchanfragen wirklich zu Ihrem Angebot passen.",
     features: [
       "Website und Angebot verstehen",
@@ -45,6 +47,8 @@ const processSteps = [
   {
     number: "02",
     title: "Einrichtung",
+    image: "/illustrations/fokus.png",
+    imageAlt: "Kampagnenelemente werden in eine klare Richtung gebuendelt",
     text: "Dann bauen wir die Kampagnen sauber auf, damit Budget nicht breit gestreut wird, sondern auf klare Kaufabsicht trifft.",
     features: [
       "Kampagnenstruktur erstellen",
@@ -55,6 +59,8 @@ const processSteps = [
   {
     number: "03",
     title: "Laufende Betreuung",
+    image: "/illustrations/optimierung.png",
+    imageAlt: "Linienchart mit Einstellungen und Optimierungssymbol",
     text: "Nach dem Start wird nicht geraten. Wir werten aus, was passiert, und verbessern die Kampagnen laufend.",
     features: [
       "Suchbegriffe auswerten",
@@ -225,7 +231,10 @@ export default function Home() {
           <div className="process-grid">
             {processSteps.map((step) => (
               <article className="process-card reveal" key={step.title}>
-                <span className="process-number">{step.number}</span>
+                <div className="process-illustration">
+                  <img src={step.image} alt={step.imageAlt} />
+                  <span className="process-number">{step.number}</span>
+                </div>
                 <h3>{step.title}</h3>
                 <p>{step.text}</p>
                 <ul>

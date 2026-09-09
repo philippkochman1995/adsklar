@@ -655,7 +655,7 @@ a {
 }
 
 .process-card {
-  min-height: 430px;
+  min-height: 520px;
   padding: clamp(26px, 3vw, 38px);
   display: flex;
   flex-direction: column;
@@ -665,7 +665,28 @@ a {
   box-shadow: 0 22px 70px rgba(30, 34, 42, 0.05);
 }
 
+.process-illustration {
+  position: relative;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(32, 33, 36, 0.08);
+  border-radius: 8px;
+  background: #f8fafd;
+}
+
+.process-illustration img {
+  width: min(82%, 260px);
+  height: 120px;
+  object-fit: contain;
+  filter: saturate(0.96);
+}
+
 .process-number {
+  position: absolute;
+  top: 14px;
+  left: 14px;
   width: 42px;
   height: 42px;
   display: grid;
@@ -678,7 +699,7 @@ a {
 }
 
 .process-card h3 {
-  margin: 34px 0 14px;
+  margin: 30px 0 14px;
   color: var(--ink);
   font-size: clamp(1.55rem, 2.3vw, 2rem);
   font-weight: 500;
