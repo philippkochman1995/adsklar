@@ -41,6 +41,24 @@ export default function DatenschutzPage() {
           </div>
 
           <div className="legal-block">
+            <h2>Kontaktformular und Formspree</h2>
+            <p>
+              Für unser Kontaktformular verwenden wir Formspree. Beim Absenden
+              werden Ihre Formularangaben an Formspree übermittelt, dort
+              verarbeitet und gespeichert und als E-Mail-Benachrichtigung an
+              uns weitergeleitet. Formspree übernimmt außerdem die Spamprüfung.
+              Dabei können technische Daten wie Ihre IP-Adresse verarbeitet
+              werden. Die Verarbeitung kann auch in den USA stattfinden.
+            </p>
+            <p>
+              Weitere Informationen finden Sie in der{" "}
+              <a href="https://formspree.io/legal/privacy-policy/">
+                Datenschutzerklärung von Formspree
+              </a>.
+            </p>
+          </div>
+
+          <div className="legal-block">
             <h2>Zweck der Verarbeitung</h2>
             <p>
               Wir verwenden diese Daten, um Ihre Anfrage zu beantworten, einen

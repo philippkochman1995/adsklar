@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import { ArrowRight, Check, Mail, Phone, Search } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -23,6 +23,7 @@ const Logo = () => (
 );
 
 const contactEmail = "office@adsklar.at";
+const contactFormEndpoint = "https://formspree.io/f/mrpgdlra";
 const contactPhoneDisplay = "0665 672 217 83";
 const contactPhoneHref = "tel:+4366567221783";
 const timeLabels: Record<string, string> = {
@@ -72,28 +73,43 @@ const processSteps = [
 
 export default function Home() {
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
+  const submissionInFlight = useRef(false);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (submissionInFlight.current) return;
+
     const formData = new FormData(event.currentTarget);
     const timeValue = String(formData.get("time") ?? "");
-    const message = [
-      `Name: ${formData.get("name") ?? ""}`,
-      `Unternehmen: ${formData.get("company") ?? ""}`,
-      `E-Mail: ${formData.get("email") ?? ""}`,
-      `Telefon: ${formData.get("phone") ?? ""}`,
-      `Wunschtermin: ${formData.get("date") ?? ""}`,
-      `Zeit: ${timeLabels[timeValue] ?? timeValue}`,
-      "",
-      "Nachricht:",
-      `${formData.get("message") ?? ""}`,
-    ].join("\n");
-    const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(
-      "Google Ads Test anfragen",
-    )}&body=${encodeURIComponent(message)}`;
+    formData.set("time", timeLabels[timeValue] ?? timeValue);
+    submissionInFlight.current = true;
+    setSubmitting(true);
+    setSubmitError("");
 
-    window.location.href = mailto;
-    setSent(true);
+    try {
+      const response = await fetch(contactFormEndpoint, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+        signal: AbortSignal.timeout(30000),
+      });
+      if (!response.ok) {
+        setSubmitError(
+          "Ihre Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns per E-Mail.",
+        );
+        return;
+      }
+      setSent(true);
+    } catch {
+      setSubmitError(
+        "Der Versand konnte nicht bestätigt werden. Bitte prüfen Sie Ihre Internetverbindung oder kontaktieren Sie uns per E-Mail.",
+      );
+    } finally {
+      submissionInFlight.current = false;
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -288,13 +304,28 @@ export default function Home() {
                   <Check aria-hidden="true" />
                 </span>
                 <h3>Danke für Ihre Anfrage.</h3>
-                <p>Ihr Mailprogramm wurde mit den Angaben geöffnet.</p>
+                <p>Ihre Anfrage wurde gesendet. Wir melden uns zeitnah bei Ihnen.</p>
                 <Button variant="outline" onClick={() => setSent(false)}>
                   Neue Anfrage
                 </Button>
               </div>
             ) : (
-              <form className="contact-form" onSubmit={handleSubmit}>
+              <form
+                className="contact-form"
+                action={contactFormEndpoint}
+                method="POST"
+                onSubmit={handleSubmit}
+                aria-busy={submitting}
+              >
+                <input type="hidden" name="subject" value="Google Ads Test anfragen" />
+                <input
+                  className="form-honeypot"
+                  type="text"
+                  name="_gotcha"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                />
                 <div className="form-grid">
                   <div className="field">
                     <Label htmlFor="name">Name</Label>
@@ -359,10 +390,20 @@ export default function Home() {
                     rows={4}
                   />
                 </div>
+                {submitError && (
+                  <p className="form-error" role="alert">
+                    {submitError}{" "}
+                    <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+                  </p>
+                )}
                 <div className="form-footer">
-                  <p>Ihre Angaben werden nur zur Kontaktaufnahme verwendet.</p>
-                  <Button type="submit" size="lg" className="blue-button">
-                    Termin anfragen <ArrowRight aria-hidden="true" />
+                  <p>
+                    Ihre Angaben werden nur zur Kontaktaufnahme verwendet.{" "}
+                    <a href="/datenschutz">Datenschutz</a>
+                  </p>
+                  <Button type="submit" size="lg" className="blue-button" disabled={submitting}>
+                    {submitting ? "Wird gesendet..." : "Termin anfragen"}{" "}
+                    <ArrowRight aria-hidden="true" />
                   </Button>
                 </div>
               </form>
