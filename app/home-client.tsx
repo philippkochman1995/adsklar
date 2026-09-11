@@ -6,13 +6,6 @@ import { ArrowRight, Check, Mail, Phone, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 
 const Logo = () => (
@@ -26,11 +19,6 @@ const contactEmail = "office@adsklar.at";
 const contactFormEndpoint = "https://formspree.io/f/mrpgdlra";
 const contactPhoneDisplay = "0665 672 217 83";
 const contactPhoneHref = "tel:+4366567221783";
-const timeLabels: Record<string, string> = {
-  morning: "09:00-12:00 Uhr",
-  afternoon: "12:00-15:00 Uhr",
-  late: "15:00-17:00 Uhr",
-};
 
 const processSteps = [
   {
@@ -82,8 +70,6 @@ export default function Home() {
     if (submissionInFlight.current) return;
 
     const formData = new FormData(event.currentTarget);
-    const timeValue = String(formData.get("time") ?? "");
-    formData.set("time", timeLabels[timeValue] ?? timeValue);
     submissionInFlight.current = true;
     setSubmitting(true);
     setSubmitError("");
@@ -362,23 +348,6 @@ export default function Home() {
                       type="tel"
                       placeholder="Optional"
                     />
-                  </div>
-                  <div className="field">
-                    <Label htmlFor="date">Wunschtermin</Label>
-                    <Input id="date" name="date" type="date" required />
-                  </div>
-                  <div className="field">
-                    <Label htmlFor="time">Zeit</Label>
-                    <Select name="time" defaultValue="morning">
-                      <SelectTrigger id="time" className="select-trigger">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="morning">09:00–12:00 Uhr</SelectItem>
-                        <SelectItem value="afternoon">12:00–15:00 Uhr</SelectItem>
-                        <SelectItem value="late">15:00–17:00 Uhr</SelectItem>
-                      </SelectContent>
-                    </Select>
                   </div>
                 </div>
                 <div className="field message-field">

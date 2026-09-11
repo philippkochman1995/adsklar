@@ -35,8 +35,8 @@ export default function DatenschutzPage() {
             <p>
               Wenn Sie uns per Kontaktformular, E-Mail oder Telefon
               kontaktieren, verarbeiten wir die Angaben, die Sie uns mitteilen.
-              Dazu können Name, Unternehmen, E-Mail-Adresse, Telefonnummer,
-              Wunschtermin und Ihre Nachricht gehören.
+              Dazu können Name, Unternehmen, E-Mail-Adresse, Telefonnummer
+              und Ihre Nachricht gehören.
             </p>
           </div>
 
